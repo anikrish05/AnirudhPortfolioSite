@@ -1,28 +1,35 @@
-import type React from "react"
+import type { ReactNode } from "react"
 import "@/styles/globals.css"
 import { Inter } from "next/font/google"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Anirudh Krishna - CS Student & Developer",
+  title: "Anirudh Krishna",
   description: "Personal website and blog of Anirudh Krishna, CS student at UC Santa Cruz",
-    generator: 'v0.dev'
+  icons: {
+    icon: "/anirudh.jpeg",
+  },
 }
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={cn(inter.className, "min-h-screen bg-black text-white antialiased")}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "min-h-screen bg-black text-white antialiased"
+        )}
+      >
+
+        {children}
+      </body>
     </html>
   )
 }
-
-
-
-import './globals.css'

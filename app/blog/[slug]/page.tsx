@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 
 import { NavHeader } from "@/components/nav-header"
 
@@ -152,8 +154,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="prose prose-invert prose-purple max-w-none">
-              {/* This would normally use a markdown parser */}
-              <div dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, "<br />") }} />
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
             </div>
           </div>
         </motion.article>

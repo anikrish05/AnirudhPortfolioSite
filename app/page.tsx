@@ -44,16 +44,15 @@ export default function Home() {
                 />
               </h1>
               <p className="text-lg text-white/70 sm:text-xl">
-                CS Student at UC Santa Cruz. ML Engineer. Full Stack Developer. Building the future with AI and web
+                CS Student at UC Santa Cruz. ML Engineer. Full Stack Developer. Entrepreneur. Building the future with AI and web
                 technologies.
               </p>
               <div className="flex gap-4">
-                <Button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white">View Projects</Button>
+                <Button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white">
+                <Link href="#projects">View Projects</Link>
+                  </Button>
                 <Button variant="outline" className="border-purple-500 text-purple-400" asChild>
                   <Link href="/resume">View Resume</Link>
-                </Button>
-                <Button variant="outline" className="border-purple-500 text-purple-400">
-                  Contact Me
                 </Button>
               </div>
             </div>
@@ -97,12 +96,13 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:text-4xl">
                 About Me
               </h2>
-              <p className="mt-6 text-lg text-white/70">
-                I&apos;m a Computer Science student at UC Santa Cruz with a perfect 4.0 GPA. I&apos;m passionate about
-                machine learning, full-stack development, and building scalable applications. Currently, I&apos;m
-                working on several projects including AI research at Baskin Engineering and leading Slug AI, UCSC&apos;s
-                AI community.
-              </p>
+                <p className="mt-6 text-lg text-white/70">
+                I&apos;m a Computer Science student at UC Santa Cruz with a perfect 4.0 GPA. 🎓 I&apos;m passionate about
+                machine learning 🤖, full-stack development 💻, and building scalable applications 🚀. Currently, I&apos;m
+                working on several projects including AI research at Baskin Engineering 🧠 and leading Slug AI, UCSC&apos;s
+                AI community 🌟. Keep on the lookout for my coolest project, Astra, a home automation platform that will change how we interact with our homes 🏠.
+                Info updated on my blog! 📝 Remember build quick, fail quick, ship fast! Reach out to talk abt any and everything.
+                </p>
             </motion.div>
           </section>
 
@@ -116,7 +116,7 @@ export default function Home() {
               className="border-l-2 border-purple-500/20 pl-6"
             >
               <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:text-4xl">
-                Experience
+                Coolest Experiences
               </h2>
               <div className="mt-6">
                 <Tabs defaultValue="work" className="w-full">
@@ -146,12 +146,12 @@ export default function Home() {
                       <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
                         <CardContent className="p-6">
                           <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                            <h3 className="font-bold text-purple-400">Baskin Engineering @ UCSC</h3>
-                            <p className="text-sm text-white/50">Computer Architecture Tutor • Jan 2025 - Present</p>
+                            <h3 className="font-bold text-purple-400">Slug AI @ UCSC</h3>
+                            <p className="text-sm text-white/50">Founder • Oct 2023 - Present</p>
                             <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
-                              <li>Provide 10 hours of weekly tutoring for Computer Architecture course</li>
-                              <li>Assist students with instruction sets, pipelining, and memory hierarchy</li>
-                              <li>Help students master complex computer architecture concepts</li>
+                              <li>Founded UCSC branch of Bruin AI with 40+ students</li>
+                              <li>Led workshops on RAG pipelines and transformers</li>
+                              <li>Organized industry panels with 150+ attendees</li>
                             </ul>
                           </motion.div>
                         </CardContent>
@@ -159,12 +159,12 @@ export default function Home() {
                       <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
                         <CardContent className="p-6">
                           <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                            <h3 className="font-bold text-purple-400">Slug AI @ UCSC</h3>
-                            <p className="text-sm text-white/50">Founder • Oct 2023 - Present</p>
+                            <h3 className="font-bold text-purple-400">Revoteen Inc.</h3>
+                            <p className="text-sm text-white/50">Founder • Jun 2020 - Jan 2024</p>
                             <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
-                              <li>Founded UCSC branch of Bruin AI with 40+ students</li>
-                              <li>Led workshops on RAG pipelines and transformers</li>
-                              <li>Organized industry panels with 150+ attendees</li>
+                              <li>Secured $30K funding and scaled a platform connecting students to extracurriculars, reaching 10,000+ users with web and mobile.</li>
+                              <li>Built with Flutter, Next.js, PostgreSQL, a single Express.js service, and deployed via Vercel, launching on Play and Apple Stores.</li>
+                              <li>Optimized performance by 5x, integrated Google Analytics/Facebook Ads, and designed UIs using Tailwind CSS and Figma.</li>
                             </ul>
                           </motion.div>
                         </CardContent>
@@ -206,6 +206,17 @@ export default function Home() {
                 Featured Projects
               </h2>
               <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden">
+                    <CardContent className="p-6">
+                      <h3 className="font-bold text-purple-400">Astra</h3>
+                      <p className="text-sm text-white/50">Python • AI • IoT</p>
+                      <p className="mt-2 text-sm text-white/70">
+                        Reinvineting Home Automation with AI and IoT. A Agentic AI platform for managing smart home devices.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
                   <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden">
                     <CardContent className="p-6">
@@ -213,18 +224,6 @@ export default function Home() {
                       <p className="text-sm text-white/50">Next.js • Express.js • FastAPI • AWS</p>
                       <p className="mt-2 text-sm text-white/70">
                         Law tech platform streamlining discovery and propounding using GraphRAG and MERN stack.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-
-                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden">
-                    <CardContent className="p-6">
-                      <h3 className="font-bold text-purple-400">Astra Blog</h3>
-                      <p className="text-sm text-white/50">Next.js • React • Tailwind CSS</p>
-                      <p className="mt-2 text-sm text-white/70">
-                        Personal blog showcasing technical articles and project updates.
                       </p>
                     </CardContent>
                   </Card>
