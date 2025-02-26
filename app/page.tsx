@@ -37,7 +37,7 @@ export default function Home() {
             <div className="flex max-w-2xl flex-col items-start gap-6">
               <h1 className="text-4xl font-bold leading-tight tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:text-6xl lg:text-7xl">
                 <TypeAnimation
-                  sequence={["Hi, I'm Anirudh Krishna", 1000, "I build amazing things", 1000, "I love to code", 1000]}
+                  sequence={["Hi, I'm Anirudh Krishna", 1000, "Cracked Developer.", 1000, "Serial builder, zero regrets.", 1000, "Founder mode: ON.", 1000]}
                   wrapper="span"
                   speed={50}
                   repeat={Number.POSITIVE_INFINITY}
