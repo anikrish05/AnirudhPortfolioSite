@@ -17,10 +17,10 @@ export default function Home() {
 
       <div className="fixed left-4 top-1/2 hidden -translate-y-1/2 flex-col gap-3 lg:flex">
         {["about", "experience", "projects", "skills"].map((section) => (
-          <Link
+          <a
             key={section}
             href={`#${section}`}
-            className="h-2 w-2 rounded-full bg-white/20 transition-colors hover:bg-purple-500"
+            className="h-2 w-2 rounded-full bg-white/20 transition-colors hover:bg-purple-500 cursor-pointer"
           />
         ))}
       </div>
@@ -37,20 +37,19 @@ export default function Home() {
             <div className="flex max-w-2xl flex-col items-start gap-6">
               <h1 className="text-4xl font-bold leading-tight tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:text-6xl lg:text-7xl">
                 <TypeAnimation
-                  sequence={["Hi, I'm Anirudh Krishna", 1000, "Cracked Developer.", 1000, "Serial builder, zero regrets.", 1000, "Founder mode: ON.", 1000]}
+                  sequence={["Hi, I'm Anirudh Krishna", 1000, "Founding Engineer at Pearson Labs", 1000, "Building AI for Legal Teams", 1000, "YC F24 Startup", 1000]}
                   wrapper="span"
                   speed={50}
                   repeat={Number.POSITIVE_INFINITY}
                 />
               </h1>
               <p className="text-lg text-white/70 sm:text-xl">
-                CS Student at UC Santa Cruz. ML Engineer. Full Stack Developer. Entrepreneur. Building the future with AI and web
-                technologies.
+                CS Student at UC Santa Cruz. Founding Engineer/CTO at Pearson Labs (YC F24). Building AI-powered solutions for legal teams, reducing delivery costs by 40-60%.
               </p>
               <div className="flex gap-4">
-                <Button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white">
-                <Link href="#projects">View Projects</Link>
-                  </Button>
+                <Button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white" asChild>
+                  <a href="#projects">View Projects</a>
+                </Button>
                 <Button variant="outline" className="border-purple-500 text-purple-400" asChild>
                   <Link href="/resume">View Resume</Link>
                 </Button>
@@ -97,11 +96,7 @@ export default function Home() {
                 About Me
               </h2>
                 <p className="mt-6 text-lg text-white/70">
-                I&apos;m a Computer Science student at UC Santa Cruz with a perfect 4.0 GPA. 🎓 I&apos;m passionate about
-                machine learning 🤖, full-stack development 💻, and building scalable applications 🚀. Currently, I&apos;m
-                working on several projects including AI research at Baskin Engineering 🧠 and leading Slug AI, UCSC&apos;s
-                AI community 🌟. Keep on the lookout for my coolest project, Astra, a home automation platform that will change how we interact with our homes 🏠.
-                Info updated on my blog! 📝 Remember build quick, fail quick, ship fast! Reach out to talk abt any and everything.
+                I&apos;m a Computer Science student at UC Santa Cruz with a 3.96 GPA. 🎓 Currently serving as Founding Engineer/CTO at Pearson Labs (YC F24), where I&apos;m building an AI-powered Dropbox for legal teams that reduces delivery costs by 40-60% in partnership with Orrick. I&apos;ve architected scalable AI systems supporting 100k+ file uploads with under 5s latency and 90%+ accuracy. Previously, I secured $3.4M funding at Baskin Engineering and founded multiple startups reaching 10,000+ users. Passionate about AI, full-stack development, and building at scale. 🚀
                 </p>
             </motion.div>
           </section>
@@ -133,38 +128,51 @@ export default function Home() {
                       <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
                         <CardContent className="p-6">
                           <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+                            <h3 className="font-bold text-purple-400">Pearson Labs (YC F24)</h3>
+                            <p className="text-sm text-white/50">Founding Engineer/CTO • April 2025 - Present</p>
+                            <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
+                              <li>Led development of AI-powered Dropbox for legal teams, reducing delivery costs by 40-60%</li>
+                              <li>Architected scalable AI systems supporting 100k+ file uploads with under 5s latency and 90%+ accuracy</li>
+                              <li>Managed 6 engineers and delivered enterprise features including RBAC and multi-region sharding</li>
+                            </ul>
+                          </motion.div>
+                        </CardContent>
+                      </Card>
+                      <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
+                        <CardContent className="p-6">
+                          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+                            <h3 className="font-bold text-purple-400">Shastha Fresh</h3>
+                            <p className="text-sm text-white/50">Software Engineer Intern • May 2024 - Present</p>
+                            <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
+                              <li>Built web and mobile e-commerce platform using React Native and Next.js, scaling to 300+ users</li>
+                              <li>Developed real-time inventory system for 1000+ SKUs using Kafka, Redis caching, and Firebase</li>
+                              <li>Automated CI/CD with Jenkins and integrated Stripe API for payment processing</li>
+                            </ul>
+                          </motion.div>
+                        </CardContent>
+                      </Card>
+                      <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
+                        <CardContent className="p-6">
+                          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+                            <h3 className="font-bold text-purple-400">Blueprint @ UCSC</h3>
+                            <p className="text-sm text-white/50">VP Of Engineering & Full Stack Developer • Nov 2023 - Present</p>
+                            <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
+                              <li>Developed web and mobile applications for non-profits using React Native and Firebase</li>
+                              <li>Built scalable infrastructure with AWS RDS, EKS, Lambda, and Kubernetes</li>
+                              <li>Automated infrastructure and CI/CD pipelines using Terraform and Jenkins</li>
+                            </ul>
+                          </motion.div>
+                        </CardContent>
+                      </Card>
+                      <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
+                        <CardContent className="p-6">
+                          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                             <h3 className="font-bold text-purple-400">Baskin Engineering @ UCSC</h3>
-                            <p className="text-sm text-white/50">ML Engineer/Researcher • May 2024 - Present</p>
+                            <p className="text-sm text-white/50">Founding ML Engineer/Researcher • May 2024 - May 2025</p>
                             <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
-                              <li>Secured $3.4M funding for educational AI tools</li>
-                              <li>Built backend with FastAPI and integrated with OpenAI</li>
-                              <li>Developed frontend with Next.js and React</li>
-                            </ul>
-                          </motion.div>
-                        </CardContent>
-                      </Card>
-                      <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
-                        <CardContent className="p-6">
-                          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                            <h3 className="font-bold text-purple-400">Slug AI @ UCSC</h3>
-                            <p className="text-sm text-white/50">Founder • Oct 2023 - Present</p>
-                            <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
-                              <li>Founded UCSC branch of Bruin AI with 40+ students</li>
-                              <li>Led workshops on RAG pipelines and transformers</li>
-                              <li>Organized industry panels with 150+ attendees</li>
-                            </ul>
-                          </motion.div>
-                        </CardContent>
-                      </Card>
-                      <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
-                        <CardContent className="p-6">
-                          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
-                            <h3 className="font-bold text-purple-400">Revoteen Inc.</h3>
-                            <p className="text-sm text-white/50">Founder • Jun 2020 - Jan 2024</p>
-                            <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
-                              <li>Secured $30K funding and scaled a platform connecting students to extracurriculars, reaching 10,000+ users with web and mobile.</li>
-                              <li>Built with Flutter, Next.js, PostgreSQL, a single Express.js service, and deployed via Vercel, launching on Play and Apple Stores.</li>
-                              <li>Optimized performance by 5x, integrated Google Analytics/Facebook Ads, and designed UIs using Tailwind CSS and Figma.</li>
+                              <li>Secured $3.4M funding, transforming startup into research lab advancing educational AI tools</li>
+                              <li>Built backend with FastAPI and REST APIs, integrating OpenAI APIs and Pinecone DB</li>
+                              <li>Developed frontend with Next.js, React, Tailwind CSS for chrome extensions and websites</li>
                             </ul>
                           </motion.div>
                         </CardContent>
@@ -176,13 +184,15 @@ export default function Home() {
                       <CardContent className="p-6">
                         <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                           <h3 className="font-bold text-purple-400">University of California, Santa Cruz</h3>
-                          <p className="text-sm text-white/50">B.S. in Computer Science • GPA: 4.0</p>
+                          <p className="text-sm text-white/50">B.S. in Computer Science • GPA: 3.96 • Expected June 2027</p>
                           <p className="mt-4 text-sm text-white/70">Relevant Coursework:</p>
                           <ul className="mt-2 list-disc pl-4 text-sm text-white/70">
                             <li>Object-oriented Python</li>
                             <li>Data Structures in C++</li>
                             <li>Computer Architecture/Assembly Language</li>
                             <li>Machine Learning</li>
+                            <li>Probability & Statistics</li>
+                            <li>Software Engineering</li>
                           </ul>
                         </motion.div>
                       </CardContent>
@@ -206,36 +216,35 @@ export default function Home() {
                 Featured Projects
               </h2>
               <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden">
-                    <CardContent className="p-6">
-                      <h3 className="font-bold text-purple-400">Astra</h3>
-                      <p className="text-sm text-white/50">Python • AI • IoT</p>
-                      <p className="mt-2 text-sm text-white/70">
-                        Reinvineting Home Automation with AI and IoT. A Agentic AI platform for managing smart home devices.
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
+                      <h3 className="font-bold text-purple-400">NeuroFlow</h3>
+                      <p className="text-sm text-white/50">Vite.js • FastAPI • AWS • RAG • Google ADK • MCP Servers</p>
+                      <p className="mt-2 text-sm text-white/70 flex-grow">
+                        AI-powered DevOps agent automating end-to-end CI/CD provisioning and documentation with Jira integration.
                       </p>
                     </CardContent>
                   </Card>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden">
-                    <CardContent className="p-6">
-                      <h3 className="font-bold text-purple-400">Doculaw</h3>
-                      <p className="text-sm text-white/50">Next.js • Express.js • FastAPI • AWS</p>
-                      <p className="mt-2 text-sm text-white/70">
-                        Law tech platform streamlining discovery and propounding using GraphRAG and MERN stack.
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
+                      <h3 className="font-bold text-purple-400">Pearson Labs Platform</h3>
+                      <p className="text-sm text-white/50">AI • Railway • Hatchet • Enterprise Features</p>
+                      <p className="mt-2 text-sm text-white/70 flex-grow">
+                        AI-powered Dropbox for legal teams with scalable systems supporting 100k+ file uploads and under 5s latency.
                       </p>
                     </CardContent>
                   </Card>
                 </motion.div>
-
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden">
-                    <CardContent className="p-6">
-                      <h3 className="font-bold text-purple-400">Soshal</h3>
-                      <p className="text-sm text-white/50">Flutter • Next.js • Node.js • Firebase</p>
-                      <p className="mt-2 text-sm text-white/70">
-                        Event management platform for clubs with integrated payment processing.
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm overflow-hidden h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
+                      <h3 className="font-bold text-purple-400">Revoteen Platform</h3>
+                      <p className="text-sm text-white/50">Flutter • Next.js • PostgreSQL • Express.js</p>
+                      <p className="mt-2 text-sm text-white/70 flex-grow">
+                        Platform connecting students to extracurriculars, reaching 10,000+ users with 5x performance optimization.
                       </p>
                     </CardContent>
                   </Card>
@@ -256,35 +265,46 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:text-4xl">
                 Skills
               </h2>
-              <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <CardContent className="p-6">
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
                       <h3 className="font-bold text-purple-400">Languages</h3>
-                      <p className="mt-2 text-sm text-white/70">
-                        Python, C, C++, JavaScript, TypeScript, Java, HTML, CSS, RISC-V
+                      <p className="mt-2 text-sm text-white/70 flex-grow">
+                        Python, C, C++, Dart, JavaScript/jQuery, TypeScript, Java, HTML, CSS, RISC-V
                       </p>
                     </CardContent>
                   </Card>
                 </motion.div>
 
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <CardContent className="p-6">
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
                       <h3 className="font-bold text-purple-400">Frameworks</h3>
-                      <p className="mt-2 text-sm text-white/70">
-                        React.js, Next.js, Flutter, Node.js, Express.js, TensorFlow, PyTorch
+                      <p className="mt-2 text-sm text-white/70 flex-grow">
+                        React.js, Next.js, Flutter, Node.js, Fast API, Express.js, Tailwind CSS, TensorFlow, PyTorch, React Native, Expo
                       </p>
                     </CardContent>
                   </Card>
                 </motion.div>
 
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
-                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm">
-                    <CardContent className="p-6">
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
                       <h3 className="font-bold text-purple-400">Tools</h3>
-                      <p className="mt-2 text-sm text-white/70">
-                        AWS, Kubernetes, Docker, Redis, Firebase, Supabase, Vercel
+                      <p className="mt-2 text-sm text-white/70 flex-grow">
+                        Git, AWS (S3, Lambda), Kubernetes, Redis, Docker, Kafka, Terraform, Firebase, Supabase, GCP, Vercel, Playwright, Hatchet
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300 }}>
+                  <Card className="bg-white/5 border border-white/10 backdrop-blur-sm h-full">
+                    <CardContent className="p-6 h-full flex flex-col">
+                      <h3 className="font-bold text-purple-400">Gen AI</h3>
+                      <p className="mt-2 text-sm text-white/70 flex-grow">
+                        NLP, ChatGPT Assistance API, Realtime API, Prompt Engineering, GraphRAG, Google ADK
                       </p>
                     </CardContent>
                   </Card>

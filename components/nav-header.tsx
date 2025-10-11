@@ -14,18 +14,19 @@ export function NavHeader() {
               </span>
             </Link>
             <nav className="hidden md:flex items-center gap-8">
-              <Link className="text-white/70 transition-colors hover:text-purple-400" href="/#about">
+              <a className="text-white/70 transition-colors hover:text-purple-400 cursor-pointer" href="#about">
                 About
-              </Link>
-              <Link className="text-white/70 transition-colors hover:text-purple-400" href="/#experience">
+              </a>
+              <a className="text-white/70 transition-colors hover:text-purple-400 cursor-pointer" href="#experience">
                 Experience
-              </Link>
-              <Link className="text-white/70 transition-colors hover:text-purple-400" href="/#projects">
+              </a>
+              <a className="text-white/70 transition-colors hover:text-purple-400 cursor-pointer" href="#projects">
                 Projects
-              </Link>
+              </a>
+              {/* 
               <Link className="text-white/70 transition-colors hover:text-purple-400" href="/blog">
                 Blog
-              </Link>
+              </Link> */}
             </nav>
           </div>
           <div className="flex items-center gap-4">

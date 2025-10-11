@@ -3,13 +3,13 @@
 Welcome to my portfolio website!
 
 - **Who Am I?**  
-  I’m a **junior at UCSC** passionate about coding and **looking for internships**. 
+  I'm a **CS student at UCSC** with a 3.96 GPA, currently serving as **Founding Engineer/CTO at Pearson Labs (YC F24)**.
 
 - **What Do I Do?**  
-  I’m currently working on **Agentic AI** for smart home agents. I also enjoy **writing blogs** about AI, technology, and everything in between.
+  I'm building an **AI-powered Dropbox for legal teams** that reduces delivery costs by 40-60%. I architect scalable AI systems supporting 100k+ file uploads with under 5s latency and 90%+ accuracy.
 
 - **Why Check Me Out?**  
-  I’m a **good coder** who loves tackling new challenges. If you’re interested in collaborating or have an opportunity, feel free to reach out!
+  I'm a **founding engineer** with experience managing teams, securing funding, and building at scale. Previously secured $3.4M funding and reached 10,000+ users across multiple startups.
 
 ## How to Use This Site
 
