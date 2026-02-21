@@ -31,7 +31,7 @@ export function NavHeader() {
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon" className="text-white/70 hover:text-purple-400" asChild>
-              <Link href="https://github.com" target="_blank">
+              <Link href="https://github.com/anikrish05" target="_blank">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
