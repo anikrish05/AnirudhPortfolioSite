@@ -44,7 +44,7 @@ export default function Home() {
                 />
               </h1>
               <p className="text-lg text-white/70 sm:text-xl">
-                CS Student at UC Santa Cruz. Founding Engineer/CTO at Pearson Labs (YC F24). Building AI-powered solutions for legal teams, reducing delivery costs by 40-60%.
+                CS Student at UC Santa Cruz. Founding Engineer at Pearson Labs (YC F24). Building AI-powered solutions for legal teams, reducing delivery costs by 40-60%.
               </p>
               <div className="flex gap-4">
                 <Button className="bg-gradient-to-r from-purple-500 to-cyan-500 text-white" asChild>
@@ -96,7 +96,7 @@ export default function Home() {
                 About Me
               </h2>
                 <p className="mt-6 text-lg text-white/70">
-                I&apos;m a Computer Science student at UC Santa Cruz with a 3.96 GPA. 🎓 Currently serving as Founding Engineer/CTO at Pearson Labs (YC F24), where I&apos;m building an AI-powered Dropbox for legal teams that reduces delivery costs by 40-60% in partnership with Orrick. I&apos;ve architected scalable AI systems supporting 100k+ file uploads with under 5s latency and 90%+ accuracy. Previously, I secured $3.4M funding at Baskin Engineering and founded multiple startups reaching 10,000+ users. Passionate about AI, full-stack development, and building at scale. 🚀
+                I&apos;m a Computer Science student at UC Santa Cruz with a 3.99 GPA. 🎓 Currently serving as Founding Engineer at Pearson Labs (YC F24), where I&apos;m building an AI-powered Dropbox for legal teams that reduces delivery costs by 40-60% in partnership with Orrick. I&apos;ve architected scalable AI systems supporting 100k+ file uploads with under 5s latency and 90%+ accuracy. Previously, I secured $3.4M funding at Baskin Engineering and founded multiple startups reaching 10,000+ users. Passionate about AI, full-stack development, and building at scale. 🚀
                 </p>
             </motion.div>
           </section>
@@ -129,7 +129,7 @@ export default function Home() {
                         <CardContent className="p-6">
                           <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                             <h3 className="font-bold text-purple-400">Pearson Labs (YC F24)</h3>
-                            <p className="text-sm text-white/50">Founding Engineer/CTO • April 2025 - Present</p>
+                            <p className="text-sm text-white/50">Founding Engineer • April 2025 - Present</p>
                             <ul className="mt-4 list-disc pl-4 text-sm text-white/70">
                               <li>Led development of AI-powered Dropbox for legal teams, reducing delivery costs by 40-60%</li>
                               <li>Architected scalable AI systems supporting 100k+ file uploads with under 5s latency and 90%+ accuracy</li>
@@ -184,7 +184,7 @@ export default function Home() {
                       <CardContent className="p-6">
                         <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
                           <h3 className="font-bold text-purple-400">University of California, Santa Cruz</h3>
-                          <p className="text-sm text-white/50">B.S. in Computer Science • GPA: 3.96 • Expected June 2027</p>
+                          <p className="text-sm text-white/50">B.S. in Computer Science • GPA: 3.99 • Expected June 2026</p>
                           <p className="mt-4 text-sm text-white/70">Relevant Coursework:</p>
                           <ul className="mt-2 list-disc pl-4 text-sm text-white/70">
                             <li>Object-oriented Python</li>

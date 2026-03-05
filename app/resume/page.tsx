@@ -21,7 +21,7 @@ export default function ResumePage() {
             <p className="mt-2 text-white/70">View and download my professional resume</p>
           </div>
           <Button className="bg-gradient-to-r from-purple-500 to-cyan-500" asChild>
-            <Link href="/ani_resume_google.pdf" download>
+            <Link href="/resume.pdf" download>
               <Download className="mr-2 h-4 w-4" />
               Download PDF
             </Link>
@@ -40,7 +40,7 @@ export default function ResumePage() {
                   <Link href="https://linkedin.com/in/AniKrish" className="text-purple-400 hover:text-purple-300">
                     linkedin.com/in/AniKrish
                   </Link>
-                  <p>San Ramon, CA</p>
+                  <p>San Francisco, CA</p>
                 </div>
               </CardContent>
             </Card>
@@ -63,8 +63,8 @@ export default function ResumePage() {
                     <p className="text-purple-400">B.S. in Computer Science</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-white/70">June 2027</p>
-                    <p className="text-purple-400">GPA: 3.96</p>
+                    <p className="text-white/70">June 2026</p>
+                    <p className="text-purple-400">GPA: 3.99</p>
                   </div>
                 </div>
                 <div className="mt-4">
@@ -94,7 +94,7 @@ export default function ResumePage() {
                   <div className="flex justify-between">
                     <div>
                       <h4 className="font-bold text-white">Pearson Labs (YC F24)</h4>
-                      <p className="text-purple-400">Founding Engineer / CTO</p>
+                      <p className="text-purple-400">Founding Engineer</p>
                     </div>
                     <p className="text-white/70">April 2025 – Present</p>
                   </div>

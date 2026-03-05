@@ -3,7 +3,7 @@
 Welcome to my portfolio website!
 
 - **Who Am I?**  
-  I'm a **CS student at UCSC** with a 3.96 GPA, currently serving as **Founding Engineer/CTO at Pearson Labs (YC F24)**.
+  I'm a **CS student at UCSC** with a 3.99 GPA, currently serving as **Founding Engineer at Pearson Labs (YC F24)**.
 
 - **What Do I Do?**  
   I'm building an **AI-powered Dropbox for legal teams** that reduces delivery costs by 40-60%. I architect scalable AI systems supporting 100k+ file uploads with under 5s latency and 90%+ accuracy.
