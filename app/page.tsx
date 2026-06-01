@@ -109,7 +109,7 @@ export default function Home() {
                   <a href="mailto:kris.anirudh@gmail.com">Get in touch</a>
                 </Button>
                 <Link href="/resume" className="inline-flex items-center gap-1 text-sm text-white/60 transition-colors hover:text-purple-400">
-                  View résumé <ArrowUpRight className="h-3.5 w-3.5" />
+                  View resume <ArrowUpRight className="h-3.5 w-3.5" />
                 </Link>
                 <a href="#projects" className="inline-flex items-center gap-1 text-sm text-white/60 transition-colors hover:text-purple-400">
                   See projects <ArrowUpRight className="h-3.5 w-3.5" />
@@ -425,7 +425,7 @@ export default function Home() {
               <a href="https://github.com/anikrish05" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">GitHub</a>
               <a href="https://linkedin.com/in/AniKrish" target="_blank" rel="noreferrer" className="transition-colors hover:text-white">LinkedIn</a>
               <a href="mailto:kris.anirudh@gmail.com" className="transition-colors hover:text-white">Email</a>
-              <Link href="/resume" className="transition-colors hover:text-white">Résumé</Link>
+              <Link href="/resume" className="transition-colors hover:text-white">Resume</Link>
             </div>
           </div>
         </footer>

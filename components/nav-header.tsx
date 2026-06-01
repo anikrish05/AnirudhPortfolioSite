@@ -48,7 +48,7 @@ export function NavHeader() {
               href="/resume"
               className="ml-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-white/85 transition-colors hover:border-white/30 hover:bg-white/10 hover:text-white"
             >
-              Résumé
+              Resume
             </Link>
           </div>
         </div>
