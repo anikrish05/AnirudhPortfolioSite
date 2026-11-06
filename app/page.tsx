@@ -88,7 +88,7 @@ export default function Home() {
             <div className="flex flex-col items-start gap-7">
               <span className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-300">
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                Incoming SWE @ Google · Summer 2026
+                MTS @ Plato · RL Environments
               </span>
 
               <h1 className="text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl lg:text-[5.5rem]">
@@ -100,8 +100,9 @@ export default function Home() {
               </h1>
 
               <p className="max-w-xl text-lg text-white/60 sm:text-xl">
-                I build AI products at the edge of legal, finance, and developer tools. Currently Founding Engineer at{" "}
-                <span className="text-white/90">Pearson Labs (YC F24)</span>, automating corporate legal transactions.
+                I&apos;m a Member of Technical Staff at <span className="text-white/90">Plato</span>, working on
+                reinforcement learning environments. Previously, I interned at Google on the Pixel team and built
+                AI products at Pearson Labs (YC F24).
               </p>
 
               <div className="flex flex-wrap items-center gap-5">
@@ -187,7 +188,7 @@ export default function Home() {
                 Experience
               </h2>
 
-              {/* Featured: Google */}
+              {/* Featured: Plato */}
               <motion.div
                 whileHover={{ y: -2 }}
                 transition={{ type: "spring", stiffness: 300 }}
@@ -198,15 +199,15 @@ export default function Home() {
                 <div className="relative">
                   <span className="inline-flex items-center gap-1.5 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-300">
                     <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 animate-pulse" />
-                    Incoming · Summer 2026
+                    Current
                   </span>
                   <div className="mt-4 flex flex-wrap items-baseline justify-between gap-2">
-                    <h3 className="text-3xl font-bold text-white md:text-4xl">Google</h3>
-                    <p className="text-sm text-white/50">June – Sept 2026</p>
+                    <h3 className="text-3xl font-bold text-white md:text-4xl">Plato</h3>
+                    <p className="text-sm text-white/50">Present</p>
                   </div>
-                  <p className="mt-1 text-purple-300">Software Engineering Intern · Pixel</p>
+                  <p className="mt-1 text-purple-300">Member of Technical Staff (MTS)</p>
                   <p className="mt-3 max-w-2xl text-white/70">
-                    Building agentic, on-device generative AI features for Pixel using Kotlin and modern Android frameworks.
+                    Working on reinforcement learning (RL) environments.
                   </p>
                 </div>
               </motion.div>
@@ -215,6 +216,12 @@ export default function Home() {
               <div className="relative mt-10">
                 <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-purple-500/40 via-white/10 to-transparent" />
                 {[
+                  {
+                    company: "Google",
+                    role: "Software Engineering Intern · Pixel",
+                    dates: "Jun 2026 – Sept 2026",
+                    blurb: "Built agentic, on-device generative AI features for Pixel using Kotlin and modern Android frameworks.",
+                  },
                   {
                     company: "Pearson Labs",
                     badge: "YC F24",

@@ -9,12 +9,20 @@ import { NavHeader } from "@/components/nav-header"
 
 const work = [
   {
+    company: "Plato",
+    badge: "Current",
+    role: "Member of Technical Staff (MTS)",
+    dates: "Present",
+    bullets: [
+      "Working on reinforcement learning (RL) environments.",
+    ],
+  },
+  {
     company: "Google",
-    badge: "Incoming",
     role: "Software Engineering Intern",
     dates: "Jun 2026 – Sept 2026",
     bullets: [
-      "Incoming Summer Intern building agentic, on-device generative AI features for Pixel experiences using Kotlin and modern Android frameworks.",
+      "Built agentic, on-device generative AI features for Pixel experiences using Kotlin and modern Android frameworks.",
     ],
   },
   {
