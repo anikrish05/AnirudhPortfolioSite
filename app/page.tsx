@@ -101,8 +101,8 @@ export default function Home() {
 
               <p className="max-w-xl text-lg text-white/60 sm:text-xl">
                 I&apos;m a Member of Technical Staff at <span className="text-white/90">Plato</span>, working on
-                reinforcement learning environments. Previously, I interned at Google on the Pixel team and built
-                AI products at Pearson Labs (YC F24).
+                reinforcement learning environments. Previously, I worked on Gemini Intelligence at Google and
+                was a Founding Engineer at Pearson Labs (YC F24).
               </p>
 
               <div className="flex flex-wrap items-center gap-5">
@@ -220,14 +220,14 @@ export default function Home() {
                     company: "Google",
                     role: "Software Engineering Intern · Pixel",
                     dates: "Jun 2026 – Sept 2026",
-                    blurb: "Built agentic, on-device generative AI features for Pixel using Kotlin and modern Android frameworks.",
+                    blurb: "Built agentic, on-device generative AI features for Gemini Intelligence on Pixel using Kotlin and modern Android frameworks.",
                   },
                   {
                     company: "Pearson Labs",
                     badge: "YC F24",
                     role: "Founding Engineer",
                     dates: "Apr 2025 – Present",
-                    blurb: "Building an AI-powered Dropbox for legal teams (Orrick partner) — 40–60% delivery cost reduction, scaled from $0 to $3M ARR. Lead an agentic venture-financing suite spanning $3–6T in deal flow. Manage 6 engineers.",
+                    blurb: "Joined as the first engineer alongside the CEO. Building an AI-powered Dropbox for legal teams (Orrick partner) — 40–60% delivery cost reduction, scaled from $0 to $3M ARR. Lead an agentic venture-financing suite spanning $3–6T in deal flow. Manage 6 engineers.",
                   },
                   {
                     company: "Shastha Fresh",

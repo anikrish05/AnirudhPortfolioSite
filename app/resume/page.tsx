@@ -22,7 +22,7 @@ const work = [
     role: "Software Engineering Intern",
     dates: "Jun 2026 – Sept 2026",
     bullets: [
-      "Built agentic, on-device generative AI features for Pixel experiences using Kotlin and modern Android frameworks.",
+      "Built agentic, on-device generative AI features for Gemini Intelligence on Pixel using Kotlin and modern Android frameworks.",
     ],
   },
   {
@@ -31,6 +31,7 @@ const work = [
     role: "Founding Engineer",
     dates: "Apr 2025 – Present",
     bullets: [
+      "Joined as the first engineer alongside the CEO.",
       "Leading development of an AI-powered Dropbox for legal teams, reducing delivery costs by 40–60% in partnership with Orrick. Scaled product from $0 to $3M ARR.",
       "Architecting scalable AI systems (ETL, RAG, redlining, clustering, document generation) with Railway and Hatchet, supporting 100k+ file uploads with <5s end-to-end latency and 90%+ pipeline accuracy.",
       "Leading DevOps: Doppler-managed secrets, cross-env CI/CD, Supabase DB migrations via Prisma.",

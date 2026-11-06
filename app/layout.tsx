@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Anirudh Krishna",
-  description: "Personal website and blog of Anirudh Krishna, Member of Technical Staff at Plato working on reinforcement learning environments. Previously a Software Engineering Intern at Google.",
+  description: "Personal website and blog of Anirudh Krishna, Member of Technical Staff at Plato working on reinforcement learning environments. Previously worked on Gemini Intelligence at Google and was a Founding Engineer at Pearson Labs (YC F24).",
   icons: {
     icon: "/anirudh.jpeg",
   },

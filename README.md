@@ -3,10 +3,10 @@
 Welcome to my portfolio website!
 
 - **Who Am I?**  
-  I'm a **Member of Technical Staff (MTS) at Plato**, working on **reinforcement learning environments**. Previously, I completed a **Software Engineering Internship at Google** on the Pixel team and built AI products at **Pearson Labs (YC F24)**.
+  I'm a **Member of Technical Staff (MTS) at Plato**, working on **reinforcement learning environments**. Previously, I worked on **Gemini Intelligence at Google** and was a **Founding Engineer at Pearson Labs (YC F24)**, joining as the first engineer alongside the CEO.
 
 - **What Do I Do?**  
-  I work on **reinforcement learning (RL) environments** at Plato. My previous work spans on-device generative AI for Pixel and AI products for legal teams.
+  I work on **reinforcement learning (RL) environments** at Plato. My previous work spans on-device generative AI for Gemini Intelligence on Pixel and AI products for legal teams.
 
 - **Why Check Me Out?**  
   I'm a **founding engineer** with experience managing teams, securing funding, and building at scale. Previously secured $3.4M funding and reached 10,000+ users across multiple startups.
